@@ -40,9 +40,6 @@ services:
     build:
       context: .
       dockerfile: build/test/Dockerfile
-      args:
-        TAG: 8.0-v1.6.1-5.0.0-8
-        LARAVEL_VERSION: 8
     entrypoint: /application/php-kafka-consumer/start.sh
     networks:
       - app-test
